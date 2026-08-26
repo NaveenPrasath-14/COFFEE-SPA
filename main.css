@@ -933,87 +933,69 @@ button {
         font-size:20px;
     }
 }
+/*-- MOBILE SIDEBAR --*/
+
 @media(max-width:450px){
-    html{
-        font-size:50%;
-    }
-    .home .content h3{
-        font-size:3.5rem;
-    }
-    .home .image{
-        max-width:100%;
-    }
-    #sider {
-    position: absolute;
-    top: 18%;
-    right: 0;
-    z-index: 999;
-    width: 20vw;
-    height: 50vh;
-    background: var(--main-color);
-    color: var(--black);
-    display: flex;
-    flex-direction: column;
-    border-radius: 10%;
-    padding-top: 20px
-}
-#sider a{
-    text-decoration: none;
-    color: var(--black);
-    font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 10px;
-}
-}
-#sider {
-    position: absolute;
-    top: 18%;
-    right: 0;
-    z-index: 999;
-    width: 20vw;
-    height: 50vh;
-    background: var(--main-color);
-    color: var(--black);
-    display: flex;
-    flex-direction: column;
-    border-radius: 10%;
-}
-#sider a{
-    text-decoration: none;
-    color: var(--black);
-    font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 0.2em;
-    margin-top: 1%;
+
+html{
+font-size:50%;
 }
 
-#sider {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 250px;
-    height: 50vh;
-    transition: 0.3s ease;
-    z-index: 1000;
+.home .content h3{
+font-size:3.5rem;
 }
 
-#sider.active {
-    right: 0;
+.home .image{
+max-width:100%;
 }
-#close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2.5rem;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1001;
+
+#sider{
+position:fixed;
+top:0;
+right:-250px;
+z-index:1000;
+width:250px;
+height:50vh;
+background:var(--main-color);
+color:var(--black);
+display:flex;
+flex-direction:column;
+align-items:center;
+border-radius:0 0 0 10%;
+padding-top:60px;
+transition:right .3s ease;
+}
+
+#sider.active{
+right:0;
+}
+
+#sider a{
+text-decoration:none;
+color:var(--black);
+font-size:2em;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:10px;
+padding:10px;
+}
+
+#close-btn{
+position:absolute;
+top:20px;
+right:20px;
+font-size:2.5rem;
+color:#fff;
+cursor:pointer;
+z-index:1001;
+transition:transform .3s ease;
+}
+
+#close-btn:hover{
+transform:rotate(90deg);
+}
+
 }
 
 #close-btn:hover {
