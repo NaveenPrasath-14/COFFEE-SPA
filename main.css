@@ -247,12 +247,12 @@ button {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    max-width: 50%;
+    width: 50%;
     margin-top: 50px;
 }
 
 .home .image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     animation: float 3s infinite ease-in-out;
 }
